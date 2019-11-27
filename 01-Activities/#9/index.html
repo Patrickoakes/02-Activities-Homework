@@ -10,47 +10,96 @@
         <title>Pseudo Classes Part 1</title>
 
         <style>
-            /*    a:link {
+            a:link {
                 font-size: 35px;
                 text-decoration: none;
                 color: green;
+
+
             }
-    
+
             a:visited {
                 color: goldenrod;
             }
-    
+
             a:hover {
                 color: grey;
             }
-    
+
             a:active {
                 color: skyblue;
-            }*/
+            }
 
-            .dropdown-content a {
+            input:default {
+                box-shadow: 0 0 2px 1px coral;
+            }
+
+            input:default+label {
+                color: coral;
+            }
+
+            input:focus {
+                box-shadow: 0 0 2px 1px skyblue;
+            }
+
+            input:focus+label {
+                color: skyblue;
+            }
+
+            fieldset {
+                margin-top: 50px;
+            }
+
+            /*  .dropdown-content a {
                 display: none;
             }
 
             .dropdown:hover .dropdown-content a {
                 display: block;
-            }
+            }   */
         </style>
     </head>
 
     <body>
+        <!--    Create a series of links and modify the pseudo-classes
+associated with their Default, Active, Hover, and Focus
+States.-->
+        <a href="https://www.google.com">Click Here</a>
+        <fieldset>
 
-        <!-- <a href="https://www.google.com">Click Here</a>-->
+            <legend>Favorite season</legend>
+
+            <input type="radio" name="season" id="spring"
+                checked>
+            <label for="spring">Spring</label>
+
+            <input type="radio" name="season" id="summer"
+                checked>
+            <label for="summer">Summer</label>
+
+            <input type="radio" name="season" id="fall"
+                checked>
+            <label for="fall">Fall</label>
+
+            <input type="radio" name="season" id="winter"
+                checked>
+            <label for="winter">Winter</label>
+        </fieldset>
 
 
-        <div class="dropdown"> <a href="#">Items</a>
+        <!--  <div class="dropdown"> <a href="#">Items</a>
             <div class="dropdown-content">
                 <a href="#">item 1</a>
                 <a href="#">item 2</a>
                 <a href="#">item 3</a>
             </div>
         </div>
+-->
 
         <body>
 
 </html>
+
+<!--    Create a series of links and modify the pseudo-classes
+associated with their Default, Active, Hover, and Focus
+States.-->
